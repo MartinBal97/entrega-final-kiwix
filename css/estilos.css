@@ -1,0 +1,197 @@
+/******Globales*******/
+html { -webkit-box-sizing: border-box; box-sizing: border-box; font-size: 62.5%; }
+
+*, *:before, *:after { margin: 0; padding: 0; -webkit-box-sizing: inherit; box-sizing: inherit; }
+
+body { font-family: "Open Sans", sans-serif; background-color: #f4f4f4; background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); font-size: 1.6rem; margin: 0; padding: 0; }
+
+img { max-width: 100%; }
+
+h2, h3 { text-align: center; }
+
+.contenedor-servicios h3 { color: #149dd3; font-weight: 400; font-size: 3rem; }
+
+p { font-size: 1.8rem; line-height: 1.5; }
+
+.tienda { margin: 0 auto; background-color: #f4f4f4; margin-top: 2rem; border-radius: 1rem; -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; }
+
+.boton { background-color: #149dd3; padding: 1rem 4rem; display: inline-block; margin-top: 1rem; color: #FFF; text-decoration: none; text-transform: uppercase; font-weight: 700; font-size: 1.4rem; border-radius: .5rem; border: none; }
+
+.boton:hover { cursor: pointer; }
+
+/*******************NAVEGADOR*******************/
+.menu { background-color: #FFF; height: 75px; width: 100vw; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-bottom: 1px solid #FFF; -webkit-box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6); box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6); position: relative; z-index: 1000; }
+
+.logo { font-family: "Open Sans", sans-serif; color: #63b94a; font-size: 35px; padding: 0 80px; font-weight: bold; }
+
+.menu_items { display: -webkit-box; display: -ms-flexbox; display: flex; list-style: none; margin-right: 30px; }
+
+.menu_items li { border-radius: 3px; margin: 0 5px; }
+
+.menu_items li a { font-family: "Open Sans", sans-serif; padding: 7px 13px; text-decoration: none; font-size: 18px; display: block; text-transform: uppercase; color: #63b94a; }
+
+.menu_items li:hover, .menu_items li.active { background-color: rgba(0, 0, 0, 0.03); -webkit-transition: .4s; transition: .4s; }
+
+.btn_menu { margin-right: 20px; cursor: pointer; display: none; }
+
+ul.show { top: 65px; }
+
+@media screen and (max-width: 952px) { .logo { font-size: 30px; padding-left: 35px; }
+  .menu_items li a { font-size: 16px; } }
+
+@media screen and (max-width: 858px) { .menu { height: 65px; }
+  .btn_menu { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
+  .menu_items { position: fixed; width: 100vw; background-color: #63b94a; top: -100vh; text-align: center; -webkit-transition: all .4s; transition: all .4s; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+  .menu_items li { margin: 5px 0 0 0; line-height: 30px; }
+  .menu_items li a { font-size: 20px; color: #FFF; font-weight: bold; }
+  .menu_items li a:hover { color: #2e5721; }
+  .menu_items li:hover { background: none; }
+  .logo { font-size: 25px; padding-left: 35px; } }
+
+@media screen and (max-width: 858px) and (orientation: landscape) { .menu_items li { margin: 5px 0 0 0; }
+  .menu_items { overflow: scroll; height: calc(100% - 65px); } }
+
+/****************************************************************************/
+.contenedor { max-width: 1200px; margin: 0 auto; background-color: white; padding: 3rem; border-radius: 1rem; -webkit-box-shadow: 0px 14px 19px -8px rgba(0, 0, 0, 0.78); box-shadow: 0px 14px 19px -8px rgba(0, 0, 0, 0.78); }
+
+.contenedor-servicios { margin-top: 3rem; }
+
+@media (min-width: 768px) { .contenedor-servicios { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+  .servicios { -webkit-box-flex: 0; -ms-flex: 0 0 calc(33.3% - 1rem); flex: 0 0 calc(33.3% - 1rem); } }
+
+.servicios { margin: 3rem auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 5px; }
+
+.iconos { width: 100px; height: 100px; border-radius: 50%; background-color: #71e44f; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 3rem; margin: 0 auto; margin-top: 2rem; }
+
+/***********Cambio de Seccion *********/
+.tienda { padding-top: 2rem; margin: 0 auto !important; padding-bottom: 5px; margin-left: 4rem; margin-bottom: 3rem; }
+
+.tienda h2 { margin: 2rem 0; }
+
+.contAccesorios { margin: 0 2rem; }
+
+.contAccesorios .producto { background-color: #d6d6d6; padding: 1rem; margin: 5px; text-decoration: none; }
+
+.contAccesorios .producto:hover { -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; -webkit-transform: scale(1.05); transform: scale(1.05); }
+
+.contAccesorios .producto, .contAccesorios .producto__imagen { border-radius: 5px; }
+
+.contAccesorios .producto__nombre { font-size: 2rem; color: #FFF; }
+
+.contAccesorios .producto__precio { font-size: 2.5rem; color: #149dd3; }
+
+.contAccesorios .producto__nombre, .contAccesorios .producto__precio { font-family: "Open Sans", sans-serif; margin: 1rem 0; text-align: center; line-height: 1; text-decoration: none; }
+
+@media (min-width: 768px) { .producto__nombre { font-size: 3.5rem; }
+  .producto__precio { font-size: 2.8rem; } }
+
+@media only screen and (min-width: 768px) { .tienda .contAccesorios { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin: 0 auto; }
+  .tienda .contAccesorios .producto { -webkit-box-flex: 0; -ms-flex: 0 0 calc(33.3% - 1rem); flex: 0 0 calc(33.3% - 1rem); -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
+
+.atienda, .atienda a { text-align: center; }
+
+/***********Cambio de Seccion *********/
+.sa { margin-bottom: 1.5rem; }
+
+form { background-color: #757575; padding: 2rem; border-radius: 1rem; margin-top: 2rem; }
+
+form legend { text-align: center; font-size: 2rem; color: #71e44f; margin-bottom: 2rem; }
+
+.campo { display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 2rem; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.campo label { -webkit-box-flex: 0; -ms-flex: 0 0 90px; flex: 0 0 90px; color: white; }
+
+.campo input { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 4rem; }
+
+.campo textarea { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 6rem; }
+
+.w-100 { -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; }
+
+.enviar { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+@media (min-width: 768px) { form { max-width: 800px; margin: 0 auto; }
+  .contenedor-campos { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  .campo { -webkit-box-flex: 0; -ms-flex: 0 0 calc(50% - 1rem); flex: 0 0 calc(50% - 1rem); } }
+
+/****************************************************************************/
+/** Pagina del Producto **/
+.pagProducto__contenido p { color: #000; }
+
+@media (min-width: 768px) { .pagProducto { display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[2]; grid-template-columns: repeat(2, 1fr); -webkit-column-gap: 2rem; column-gap: 2rem; } }
+
+.formulario { display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[2]; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+
+.formulario__campo { border: 1rem solid #d6d6d6; background-color: transparent; color: #000; font-size: 2rem; font-family: Arial, Helvetica, sans-serif; padding: 1rem; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+.formulario__submit { background-color: #149dd3; border: none; font-size: 2rem; font-family: "Open Sans", sans-serif; padding: 2rem; -webkit-transition: background-color .3s ease; transition: background-color .3s ease; -ms-grid-column: 1; -ms-grid-column-span: 2; grid-column: 1 / 3; }
+
+.formulario__submit:hover { cursor: pointer; background-color: #1086b4; }
+
+/****************************************************************************/
+/** Pagina  Contacto, modificando mapas y parte horarios **/
+.ubicacion__horarios, .ubicacion__horarios--partes { margin: 0 auto; }
+
+.mapa { position: relative; padding-bottom: 66.66666667%; height: 0; }
+
+.mapa iframe { position: absolute; top: 0; left: 0; width: 100%; height: 80%; }
+
+.ubicacion__horarios--partes .horarios { text-align: center; margin: 2rem 0; }
+
+.ubicacion__horarios--partes .horarios span { font-weight: bold; }
+
+.parte_redes { margin: 0 auto; padding: 1em; width: 70%; }
+
+.iconos__contacto { width: 80px; height: 80px; border-radius: 50%; background-color: #d6d6d6; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; margin: 0 auto; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 3rem; }
+
+/********************PIE DE PAGINA ********************/
+.footer-distributed { background: #666; -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12); box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12); -webkit-box-sizing: border-box; box-sizing: border-box; width: 100%; text-align: left; font: bold 16px sans-serif; padding: 55px 50px; margin-top: 2rem; /* Footer izquierda */ /* Logo empresa */ /* Footer links */ /* Footer Center */ /* Footer Right */ }
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right { display: inline-block; vertical-align: top; }
+
+.footer-distributed .footer-left { width: 40%; }
+
+.footer-distributed .footer-left h3 { text-align: left; }
+
+.footer-distributed h3 { color: #FFF; font: normal 36px "Open Sans", sans-serif; margin: 0; }
+
+.footer-distributed h3 .footer_img { width: 50px; height: 50px; }
+
+.footer-distributed .footer-links { color: #ffffff; margin: 20px 0 12px; padding: 0; }
+
+.footer-distributed .footer-links a { display: inline-block; line-height: 1.8; font-weight: 400; text-decoration: none; color: inherit; }
+
+.footer-distributed .footer-links a:hover { -webkit-transition: .4s; transition: .4s; color: #63b94a; }
+
+.footer-distributed .footer-links a:before { content: "|"; font-weight: 300; font-size: 20px; left: 0; color: #fff; display: inline-block; padding-right: 5px; }
+
+.footer-distributed .footer-links .link-1:before { content: none; }
+
+.footer-distributed .footer-company-name { color: #222; font-size: 14px; font-weight: normal; margin: 0; }
+
+.footer-distributed .footer-center { width: 35%; }
+
+.footer-distributed .footer-center i { background-color: #33383b; color: #ffffff; font-size: 25px; width: 38px; height: 38px; border-radius: 50%; text-align: center; line-height: 42px; margin: 10px 15px; vertical-align: middle; }
+
+.footer-distributed .footer-center i.fa-envelope { font-size: 17px; line-height: 38px; }
+
+.footer-distributed .footer-center p { display: inline-block; color: #ffffff; font-weight: 400; vertical-align: middle; margin: 0; }
+
+.footer-distributed .footer-center p span { display: block; font-weight: normal; font-size: 14px; line-height: 2; }
+
+.footer-distributed .footer-center p a { color: lightseagreen; text-decoration: none; }
+
+.footer-distributed .footer-right { width: 20%; }
+
+.footer-distributed .footer-company-about { line-height: 20px; color: #92999f; font-size: 13px; font-weight: normal; margin: 0; }
+
+.footer-distributed .footer-company-about span { display: block; color: #ffffff; font-size: 14px; font-weight: bold; margin-bottom: 20px; }
+
+.footer-distributed .footer-icons { margin-top: 25px; }
+
+.footer-distributed .footer-icons a { display: inline-block; width: 35px; height: 35px; cursor: pointer; background-color: #33383b; border-radius: 2px; font-size: 20px; color: #ffffff; text-align: center; line-height: 35px; margin-right: 3px; margin-bottom: 5px; }
+
+@media (max-width: 880px) { .footer-distributed { font: bold 14px sans-serif; }
+  .footer-distributed .footer-left h3 { text-align: center; }
+  .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right { display: block; width: 100%; margin-bottom: 40px; text-align: center; }
+  .footer-distributed .footer-center i { margin-left: 0; } }
+/*# sourceMappingURL=estilos.css.map */
